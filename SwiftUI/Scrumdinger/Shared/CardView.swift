@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CardView: View {
-    var scrum: DailyScrum
+    let scrum: DailyScrum
     var body: some View {
         
         VStack(alignment: .leading) {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).font(.headline)
+            Text("\(scrum.title)").font(.headline)
                 .accessibilityAddTraits(.isHeader)
             
             Spacer()
